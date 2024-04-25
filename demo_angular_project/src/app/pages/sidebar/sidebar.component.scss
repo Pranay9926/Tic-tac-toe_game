@@ -1,0 +1,31 @@
+.drawer {
+    position: inherit !important;
+
+    .imgdiv {
+        padding: 15px;
+        box-shadow: 0 2px 3px 0px darkgray;
+        margin-bottom: 10px;
+
+        img {
+            width: 90px;
+        }
+
+    }
+
+    .sideitem {
+        padding: 10px;
+    }
+}
+mat-toolbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 0%;
+    background-image: linear-gradient(45deg, #3636c8, #c528c0);
+    color: aliceblue;
+}
+button{
+    color: aliceblue;
+    mat-icon{
+        font-size: 30px;
+    }
+}

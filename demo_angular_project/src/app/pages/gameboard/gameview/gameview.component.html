@@ -1,0 +1,100 @@
+<div class="gameview_maindiv">
+    <div class="maindiv">
+        <h1 class="titel">Tic Tac Toe </h1>
+        <label class="lable1" *ngIf="!toggle && !disabled">Let's Start Game</label>
+        <label class="lable1" *ngIf="toggle || disabled">Game Over</label>
+        <label class="lable1">RoomID:- {{roomId}}</label>
+        <div class="chance">
+            <label [ngClass]="{'glow':togglebox == false && toggle == false }"> {{Name}} </label>
+            <label [ngClass]="{'glow':togglebox == true && toggle == false}"> {{Name2}} </label>
+        </div>
+        <div class="board-container">
+            <div class="board">
+                <div class="row">
+                    <div class="box" [ngClass]="{'green':state[0]=='O', 
+                    'yellow':state[0] == 'X'}"
+                        (click)="state[0]!=null ? '' : togglebox == false ? handleClick(0) : '' ">
+                        <h1>{{state[0]}}</h1>
+                    </div>
+                    <div class="line3 ">
+                    </div>
+                    <div class="box" [ngClass]="{'green':state[1]=='O', 
+                    'yellow':state[1] == 'X'}"
+                        (click)="state[1]!=null ? '' : togglebox == false ? handleClick(1) : '' ">
+                        <h1>{{state[1]}}</h1>
+                    </div>
+                    <div class="line3 ">
+                    </div>
+                    <div class="box" [ngClass]="{'green':state[2]=='O', 
+                    'yellow':state[2] == 'X'}"
+                        (click)="state[2]!=null ? '' : togglebox == false ? handleClick(2) : '' ">
+                        <h1>{{state[2]}}</h1>
+                    </div>
+                </div>
+                <div class="line1">
+                </div>
+                <div class="row">
+                    <div class="box" [ngClass]="{'green':state[3]=='O', 
+                    'yellow':state[3] == 'X'}"
+                        (click)="state[3]!=null ? '' : togglebox == false ? handleClick(3) : '' ">
+                        <h1>{{state[3]}}</h1>
+                    </div>
+                    <div class="line3 ">
+                    </div>
+                    <div class="box" [ngClass]="{'green':state[4]=='O', 
+                    'yellow':state[4] == 'X'}"
+                        (click)="state[4]!=null ? '' : togglebox == false ? handleClick(4) : ''  ">
+                        <h1>{{state[4]}}</h1>
+                    </div>
+                    <div class="line3 ">
+                    </div>
+                    <div class="box" [ngClass]="{'green':state[5]=='O', 
+                    'yellow':state[5] == 'X'}"
+                        (click)="state[5]!=null ? '' : togglebox == false ? handleClick(5) : ''  ">
+                        <h1>{{state[5]}} </h1>
+                    </div>
+                </div>
+                <div class="line2">
+                </div>
+                <div class="row">
+                    <div class="box" [ngClass]="{'green':state[6]=='O', 
+                    'yellow':state[6] == 'X'}"
+                        (click)="state[6]!=null ? '' : togglebox == false ? handleClick(6) : '' ">
+                        <h1>{{state[6]}}</h1>
+                    </div>
+                    <div class="line3 ">
+                    </div>
+                    <div class="box" [ngClass]="{'green':state[7]=='O', 
+                    'yellow':state[7] == 'X'}"
+                        (click)="state[7]!=null ? '' : togglebox == false ? handleClick(7) : '' ">
+                        <h1>{{state[7]}}</h1>
+                    </div>
+                    <div class="line3 ">
+                    </div>
+                    <div class="box" [ngClass]="{'green':state[8]=='O', 
+                    'yellow':state[8] == 'X'}"
+                        (click)="state[8]!=null ? '' : togglebox == false ? handleClick(8) : '' ">
+                        <h1>{{state[8]}}</h1>
+                    </div>
+                </div>
+                <div *ngIf="toggle"
+                    [ngClass]="{'vl_147':num =='147', 'vl_036':num =='036','vl_258':num =='258','vl_012':num =='012','vl_345':num =='345','vl_678':num =='678','vl_048':num =='048','vl_246':num =='246' }">
+                </div>
+            </div>
+        </div>
+
+        <div class="pyro" *ngIf="toggle">
+            <div class="before"></div>
+            <div class="after"></div>
+        </div>
+
+        <div class="titel" *ngIf="toggle">
+            <h1>Player {{result}} is the Winner </h1>
+            <button (click)="restButton()">Restart</button>
+        </div>
+        <div class="titel" *ngIf="disabled">
+            <h1>Game Tie</h1>
+            <button (click)="restButton()">Restart</button>
+        </div>
+    </div>
+</div>

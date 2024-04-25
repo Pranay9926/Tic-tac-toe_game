@@ -1,0 +1,36 @@
+<div class="room_maindiv">
+    <div class="roomdiv" *ngIf="!toggle">
+        <label>Player 1 Name</label>
+        <h1>{{Name}}</h1>
+        <div class="creteroom">
+            <button class="button" (click)="gotoGameview()">
+                Create Room
+            </button>
+        </div>
+        <label class="OR">OR</label>
+        <div class="creteroom">
+            <button class="button" (click)="toggle = true">
+                Join Room
+            </button>
+        </div>
+    </div>
+    
+    <div class="roomdiv" *ngIf="toggle">
+        <form [formGroup]="joinroomform" (ngSubmit)="onSubmit()">
+            <mat-form-field>
+                <mat-label>Enter Room ID</mat-label>
+                <input class="inputfield" type="name" matInput formControlName="roomID">
+                <mat-error *ngIf="submitted && f.roomID.errors" class="invalid-feedback">
+                    <div class="errors" *ngIf="f.roomID.hasError('required')">
+                        Please enter Room ID.
+                    </div>
+                </mat-error>
+            </mat-form-field>
+            <div class="submitbutton">
+                <button mat-raised-button class="buttonjoin" type="submit">Join</button>
+                <button mat-raised-button class="buttonjoin" (click)="toggle = false">Back</button>
+            </div>
+            
+        </form>
+    </div>
+</div>

@@ -1,0 +1,170 @@
+.logindiv{
+ 
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    .errors{
+        color: aliceblue;
+        text-shadow: 2px 2px 5px red;
+    }
+    @media screen and (max-width: 750px) {
+        .headtext{
+            font-size: 20px;
+            font-weight: 400px;
+            padding-bottom: 10px;
+            color: aliceblue;
+            text-shadow: 2px 2px 5px red;
+        }
+        .Forget{
+            font-size: 12px;
+            font-weight: 200px;
+            color: #0084be;
+            padding-bottom: 10px;
+            display: flex;
+            justify-content: end;
+            padding-right: 40px;
+        }
+        h1 {
+            color: aliceblue;
+            text-shadow: 2px 2px 5px red;
+            font-size: 40px;
+            letter-spacing: 2px;
+            text-align: center;
+            margin: 0%;
+        }
+        .imgdiv {
+                display: flex;
+                justify-content: space-around;
+                padding: 20px;
+                img{
+                    width: 100px;
+                    height: 100px;
+                    box-shadow: 0 0 20px 3px palevioletred;
+                    border-radius: 20px;
+                        
+                }
+             
+            }
+            mat-card {
+            
+                    width: 340px;
+                    height: 420px;
+                    border-radius: 30px;
+                    background-image: linear-gradient(45deg, #3636c8, #c528c0);
+                    box-shadow: 0px 0 20px 10px #df92f7;
+                }
+            mat-card-content {
+                text-align: center !important;
+                mat-form-field {
+                    width: 80%;
+                    padding-top: 30px;
+                }
+            
+            }
+            .submitbutton{
+                padding-top: 55px;
+                .button {
+                        display: inline-block;
+                        font-size: 24px;
+                        cursor: pointer;
+                        text-align: center;
+                        text-decoration: none;
+                        outline: none;
+                        color: #fff;
+                        border: none;
+                        border-radius: 15px;
+                        box-shadow: 0 9px #999;
+                    }
+                
+                    .button:active {
+                        background-color: #3e8e41;
+                        box-shadow: 0 5px #666;
+                        transform: translateY(4px);
+                    }
+            }
+        }
+    @media screen and (min-width: 750px) {
+        form{
+            padding-top: 20px;
+        }
+        .headtext {
+                font-size: 30px;
+                font-weight: 500;
+                color: #0084be;
+                padding-bottom: 10px;
+            }
+        
+            .Forget {
+                font-size: 15px;
+                font-weight: 200px;
+                color: #0084be;
+                padding-bottom: 10px;
+                display: flex;
+                justify-content: end;
+                padding-right: 40px;
+            }
+        .imgdiv {
+                display: flex;
+                justify-content: space-around;
+                padding: 20px;
+                img {
+                        width: 100px;
+                        height: 100px;
+                        box-shadow: 0 0 20px 3px palevioletred;
+                            
+                    }
+                
+            }
+            mat-card {
+        
+                width: 450px;
+                height: 500px;
+                border-radius: 30px;
+                display: flex;
+                justify-content: space-evenly;
+                background-image: linear-gradient(45deg, #3636c8, #c528c0);
+                box-shadow: 0px 0 20px 10px #df92f7;
+            }
+        
+            mat-card-content {
+                text-align: center !important;
+                mat-form-field {
+                    width: 80%;
+                    padding: 15px;
+                }
+        
+            }
+            .submitbutton{
+                padding-top: 30px;
+                .button {
+                        display: inline-block;
+                        font-size: 24px;
+                        cursor: pointer;
+                        text-align: center;
+                        text-decoration: none;
+                        outline: none;
+                        color: #fff;
+                        border: none;
+                        border-radius: 15px;
+                        box-shadow: 0 9px #999;
+                    }
+                
+                    .button:active {
+                        background-color: #3e8e41;
+                        box-shadow: 0 5px #666;
+                        transform: translateY(4px);
+                    }
+            }
+                h1 {
+                    color: aliceblue;
+                    text-shadow: 2px 2px 5px red;
+                    font-size: 40px;
+                    letter-spacing: 2px;
+                    text-align: center;
+                margin: 0%;
+                }
+        }   
+   
+}

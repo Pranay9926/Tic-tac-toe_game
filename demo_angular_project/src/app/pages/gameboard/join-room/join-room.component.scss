@@ -1,0 +1,84 @@
+.room_maindiv{
+    display: flex;
+    justify-content: center;
+}
+h1 {
+    color: aliceblue;
+    text-shadow: 2px 2px 5px red;
+    font-size: 25px;
+    letter-spacing: 2px;
+    text-align: center;
+    margin: 0%;
+    padding: 10px;
+}
+label{
+    color: aliceblue;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+.button {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-image: linear-gradient(45deg, #3636c8, #c528c0);
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+}
+
+.button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+.creteroom{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.roomdiv{
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 56px);
+    justify-content: center;
+    text-align: center;
+    width: 525px;
+}
+.OR{
+    margin-top: 50px;
+}
+mat-form-field {
+    width: 80%;
+    padding-top: 30px;
+}
+.submitbutton{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 50px;
+    .buttonjoin{
+        display: inline-block;
+        font-size: 20px;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        outline: none;
+        color: #fff;
+        background-image: linear-gradient(45deg, #3636c8, #c528c0);
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 9px #999;
+        
+    }
+    .buttonjoin:active {
+        background-color: #3e8e41;
+        box-shadow: 0 5px #666;
+        transform: translateY(4px);
+    }
+}
